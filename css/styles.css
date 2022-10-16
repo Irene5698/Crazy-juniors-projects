@@ -6,6 +6,21 @@ html {
 .container {
     margin: 0 auto;
     width: 1200px;
+
+    @media screen and (min-width: 320px) {
+        width: 480px;
+      }
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
 }
 
 
@@ -34,6 +49,22 @@ line-height: calc(37 / 30);
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FCFCFC;
+
+@media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 18px;
+line-height: calc(22 / 18);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    font-size: 26px;
+line-height: calc(32 / 26);
+  }
+
+
 }
 
 .footer__ingredient {
@@ -46,13 +77,25 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 
 color: #FCFCFC;
+
+@media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 18px;
+line-height: calc(22 / 18);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    font-size: 26px;
+line-height: calc(32 / 26);
+  }
 }
 
-.footer__socials-icon {
-    fill: #131313;
-    background: #F8D24E;
-    border-radius: 50%;
-
+.footer__socials-icon:hover,
+.footer__socials-icon:focus {
+    fill: #FCFCFC;
 }
 
 .footer__socials-list {
