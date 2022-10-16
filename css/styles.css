@@ -5,7 +5,6 @@ html {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
 
     @media screen and (min-width: 320px) {
         width: 480px;
@@ -26,6 +25,7 @@ html {
 
 .footer__main {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     border-bottom: 1px solid #E1E1E1;
 }
@@ -35,10 +35,7 @@ html {
     background-color: #84A178;
 }
 
-.footer__contact {
-    
-    margin-left: auto;
-}
+
 
 .footer__title-text {
     font-family: 'Montserrat';
@@ -93,6 +90,10 @@ line-height: calc(32 / 26);
   }
 }
 
+.footer__socials-icon {
+    fill: #84a178;
+}
+
 .footer__socials-icon:hover,
 .footer__socials-icon:focus {
     fill: #FCFCFC;
@@ -100,19 +101,35 @@ line-height: calc(32 / 26);
 
 .footer__socials-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 30px;
     margin-bottom: 40px;
     list-style: none;
-    align-items: center;
+    align-items: baseline;
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        margin-bottom: 32px;
+      }
     
+      @media screen and (max-width: 320px) {
+        margin-bottom: 38px;
+      }
 }
 
 
 .footer__footer-list {
     margin-left: auto;
-    align-items: baseline;
     padding-bottom: 54px;
+}
+
+.footer__contact {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        text-align: right;
+      }
+      @media screen and (min-width: 768px) {
+        text-align: right;
+      }
     
 }
 
@@ -136,24 +153,35 @@ letter-spacing: 0.02em;
 }
 
 .footer__copy {
-justify-content: center;
-align-items: center;
-padding-bottom: 11px;
-}
-
-.footer__text {
- justify-content: center;
- align-items: center;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
 line-height: 186%;
 letter-spacing: 0.02em;
-
-
 color: #7A7A7A;
 
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 152%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  @media screen and (min-width: 1200px) {
+font-size: 12px;
+line-height: 186%;
+  }
+
+}
+
+.footer__text {
+ justify-content: center;
+ align-items: center;
 }
 
 
